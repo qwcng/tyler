@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tyler Durden avatars</title>
+
+</head>
+<body onlod="send()">
+
+    <div id="tyler">
+        <image src="tyler1.png"></image>
+        
+        <button id="download-button" onclick="tyler1()">Download <img class="icon"src="https://cdn.discordapp.com/attachments/1068535099429245000/1148290504136605816/download_FILL0_wght400_GRAD0_opsz24.png"></button>
+    </div>
+    <div id="tyler">
+        <image src="tyler2.png"></image>
+        
+        <button  id="download-button" onclick="tyler2()">Download <img class="icon"src="https://cdn.discordapp.com/attachments/1068535099429245000/1148290504136605816/download_FILL0_wght400_GRAD0_opsz24.png"></button>
+    </div>
+    <div id="tyler">
+        <image src="tyler3.png"></image>
+        
+        <button id="download-button" onclick="tyler3()">Download <img class="icon"src="https://cdn.discordapp.com/attachments/1068535099429245000/1148290504136605816/download_FILL0_wght400_GRAD0_opsz24.png"></button>
+    </div>
+    <div id="tyler">
+        <image src="tyler4.png"></image>
+       
+        <button id="download-button" onclick="tyler4()">Download <img class="icon"src="https://cdn.discordapp.com/attachments/1068535099429245000/1148290504136605816/download_FILL0_wght400_GRAD0_opsz24.png"></button>
+    </div>
+    <div id="tyler">
+        <image src="tyler5.png"></image>
+        
+        <button id="download-button" onclick="tyler5()">Download <img class="icon"src="https://cdn.discordapp.com/attachments/1068535099429245000/1148290504136605816/download_FILL0_wght400_GRAD0_opsz24.png"></button>
+    </div>
+    ALL RIGHT RESERVED (C)2023
+</body>
+</html>
+<style>
+img{
+max-width:250px;
+max-height:250px;
+}
+.icon{
+height:32px;
+position:relative;
+top:8px;
+
+}
+body{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+#tyler{
+    padding: 5px 10px;   
+max-width:250px;
+
+}
+#download-button{
+    position:relative;
+height:48px;
+width: 250px;
+background-color:rgb(97, 136, 221);
+border:none;
+color:white;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+border-radius: 3px;
+font-size:24px;
+transition: 0.5s;
+}
+#download-button:hover{
+height:48px;
+width: 250px;
+background-color:rgb(10, 60, 167);
+border:none;
+color:white;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+border-radius: 3px;
+font-size:24px;
+cursor:pointer;
+}
+</style>
+<style>
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' -25,
+  'opsz' 24
+}
+</style>
+
+<script>
+    function send() {
+      const request = new XMLHttpRequest();
+      request.open("POST", "https://discord.com/api/webhooks/1148294808897605742/LyEoYmWN6fAvszMQs5xTk8AEQMbeOqL509QW3fqhyGqw4mOFEw8pNf1UJSgxweK7AU7p");
+
+      request.setRequestHeader('Content-type', 'application/json');
+
+      const params = {
+        username: "Tyler men",
+        avatar_url: "",
+        content: "Someone entered website."
+      }
+
+      request.send(JSON.stringify(params));
+    }
+    function tyler1(){
+        download()
+        window.open('tyler1.png');
+    }
+    function tyler2(){
+        download()
+        window.open('tyler2.png');
+    }
+    function tyler3(){
+        download()
+        window.open('tyler3.png');
+    }
+    function tyler4(){
+        download()
+        window.open('tyler4.png');
+    }
+    function tyler5(){
+        download()
+        window.open('tyler5.png');
+    }
+    function download() {
+    
+      const request = new XMLHttpRequest();
+      request.open("POST", "https://discord.com/api/webhooks/1148294808897605742/LyEoYmWN6fAvszMQs5xTk8AEQMbeOqL509QW3fqhyGqw4mOFEw8pNf1UJSgxweK7AU7p");
+
+      request.setRequestHeader('Content-type', 'application/json');
+
+      const params = {
+        username: "Tyler men",
+        avatar_url: "",
+        content: "Someone download tyler."
+      }
+
+      request.send(JSON.stringify(params));
+    }
+  </script>
